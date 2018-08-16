@@ -11,3 +11,5 @@ import {ErrorMessage} from '../utils';
     ErrorMessage.simple({err, message:'mongoose failed'})
   }
 })()
+
+require('../model/user');
