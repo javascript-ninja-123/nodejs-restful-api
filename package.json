@@ -1,0 +1,36 @@
+{
+  "name": "nodejs-thinkful",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "sudo NODE_ENV=qa mocha ./tests/** --require @babel/register --require @babel/polyfill --exit",
+    "start-dev": "nodemon ./src/index.js",
+    "start": "nodemon --exec babel-node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "helmet": "^3.13.0",
+    "mongoose": "^5.2.8",
+    "morgan": "^1.9.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.0.0-rc.1",
+    "@babel/core": "^7.0.0-rc.1",
+    "@babel/node": "^7.0.0-rc.1",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0-rc.1",
+    "@babel/plugin-proposal-throw-expressions": "^7.0.0-rc.1",
+    "@babel/plugin-transform-async-to-generator": "^7.0.0-rc.1",
+    "@babel/polyfill": "^7.0.0-rc.1",
+    "@babel/preset-env": "^7.0.0-rc.1",
+    "@babel/register": "^7.0.0-rc.1",
+    "chai": "^4.1.2",
+    "chai-http": "^4.0.0",
+    "faker": "^4.1.0",
+    "mocha": "^5.2.0"
+  }
+}
